@@ -19,6 +19,8 @@ public class telaidade extends javax.swing.JFrame {
      */
     public telaidade() {
         initComponents();
+        lblat.setText(Integer.toString(cal.get(Calendar.YEAR)));
+        
     }
 
     /**
@@ -130,7 +132,7 @@ public class telaidade extends javax.swing.JFrame {
 
     private void btncalcActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btncalcActionPerformed
 int an = Integer.parseInt(txtan.getValue().toString());
-lblat.setText(Integer.toString(cal.get(Calendar.YEAR)));
+
 Calendar cal = GregorianCalendar.getInstance();
 
     int at= cal.get(Calendar.YEAR);
